@@ -6,6 +6,18 @@
 
 Bu proje, Python kullanılarak geliştirilen bir web uygulamasıdır. Uygulama, K-Means algoritmasını hem kütüphane kullanarak hem de kütüphane kullanmadan çalıştırır. Sonuçlar, Silhouette Skoru ile kıyaslanarak en iyi küme sayısı belirlenir. Ayrıca, proje PostgreSQL kullanılarak veritabanına veri aktarımı, loglama, ve Flask ile metodların servis edilmesini içerir. Bu README dosyasında proje hakkında detaylı bilgi verilmektedir.
 
+## Uygulama Ekran Görüntüleri
+
+1. **Giriş ve Dosya Yükleme Arayüzü**:
+   (images/ApplicationInterfaceScreen.png)
+
+2. **Dosya Yükleme İşlemi**:
+   (images/DisplayResult.png)
+
+3. **Sonuçların CSV Olarak İndirilmesi ve Kıyaslanması**:
+   (images/UploadResultSection.png)
+
+
 ## Proje İçeriği
 
 - **PostgreSQL**: Veriler, PostgreSQL veritabanına aktarılır ve uygulama bu verileri veritabanından tüketir.
