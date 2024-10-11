@@ -1,0 +1,69 @@
+.box {
+  border: 3px solid green;
+  border-radius: 20px; /* kenarları yumuşatır*/
+  text-align: center;
+  height: auto; /* Yüksekliği esnek hale getiriyoruz */
+  width: 100%; /* Genişlik ekranın tamamına uyacak */
+  display: flex; /* kutunun içindeki öğeleri flex konteyneri haline getirir. Kutu içindeki öğeler esnek bir düzende yer alacak   kutunun içinde bulunan tüm öğeler*/
+  /* flex içini yatay olarak ortalar  justify-content: center; */
+  flex-direction: column; /* Öğeleri dikey olarak hizalar */
+  justify-content: center;
+  align-items: center; /* flex içini dikeyde ortalar*/
+  overflow: hidden;
+}
+
+.elements {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elements .box {
+  padding: 1px;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: coral;
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  max-width: auto; /* Görselin genişliği kutunun genişliğine göre ayarlanacak */
+  height: auto; /* Yükseklik, genişlik ile orantılı olarak değişecek */
+  object-fit: contain; /* Görsel kutunun içinde kalacak şekilde ölçeklenecek */
+}
+
+.download-bar {
+  margin-left: 15px;
+  margin-top: 85px;
+  width: 80%;
+}
+
+.result {
+  display: flex; /* kutunun içindeki öğeleri flex konteyneri haline getirir. Kutu içindeki öğeler esnek bir düzende yer alacak   kutunun içinde bulunan tüm öğeler*/
+  /* flex içini yatay olarak ortalar  justify-content: center; */
+  flex-direction: column; /* Öğeleri dikey olarak hizalar */
+  justify-content: start;
+  align-items: start;
+}
+.result-row {
+  display: flex; /* kutunun içindeki öğeleri flex konteyneri haline getirir. Kutu içindeki öğeler esnek bir düzende yer alacak   kutunun içinde bulunan tüm öğeler*/
+  /* flex içini yatay olarak ortalar  justify-content: center; */
+  flex-direction: column; /* Öğeleri dikey olarak hizalar */
+  justify-content: start;
+  align-items: start;
+  margin-left: 15px;
+  margin-top: 85px;
+  width: 80%;
+}
+
+.table-caption {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+}
