@@ -9,14 +9,16 @@ Bu proje, Python kullanılarak geliştirilen bir web uygulamasıdır. Uygulama, 
 ## Uygulama Ekran Görüntüleri
 
 1. **Giriş ve Dosya Yükleme Arayüzü**:
-   (images/ApplicationInterfaceScreen.png)
+   ![Giriş ve Dosya Yükleme](images/ApplicationInterfaceScreen.PNG)
 
 2. **Dosya Yükleme İşlemi**:
-   (images/DisplayResult.png)
+   ![Dosya Yükleme İşlemi](images/UploadResultSection.PNG)
+   
 
-3. **Sonuçların CSV Olarak İndirilmesi ve Kıyaslanması**:
-   (images/UploadResultSection.png)
-
+4. **Sonuçların CSV Olarak İndirilmesi ve Kıyaslanması**:
+   ![Sonuçları İndirme ve Kıyaslama](images/DisplayResult.png)
+   
+  
 
 ## Proje İçeriği
 
