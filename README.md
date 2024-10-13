@@ -39,18 +39,18 @@ Projenin çalışma mantığını gösteren bir video hazırladım. Videoyu izle
 
 ### K-Means Algoritması Nedir?
 
-K-Means, denetimsiz öğrenme yöntemlerinden biri olan kümeleme algoritmaları arasında en popüler olanıdır. Bu algoritma, bir veri setini belirli sayıda kümeye ayırarak, her bir kümeye en yakın veri noktalarını gruplamayı amaçlar. Algoritmanın temel amacı, verileri kümelere ayırmak ve her bir kümenin merkezi bir noktasını (centroid) belirlemektir.
+K-Means, denetimsiz öğrenme yöntemlerinden biri olan kümeleme algoritmaları arasında en popüler olanıdır. Bu algoritma, bir veri setini belirli sayıda kümeye ayırarak, her bir kümeye en yakın veri noktalarını gruplamayı amaçlar. Algoritmanın temel amacı, verileri kümelere ayırmaktır.
 
 ### K-Means Algoritmasının Çalışma Adımları
 
 1. **Kümelerin Sayısının Belirlenmesi (K değeri)**:
-    Kullanıcı tarafından önceden belirlenen K değeri, veri setindeki kaç küme oluşacağını belirler.
+    Kullanıcı tarafından önceden belirlenen K değeri, veri setindeki denenecek maksimum küme sayısını belirler.
 
 2. **Başlangıç Merkezlerinin Rastgele Seçilmesi**:
     Algoritma, verilerin merkezine yakın rastgele K adet merkezi başlangıç noktası olarak seçer.
 
 3. **Her Noktanın En Yakın Merkeze Atanması**:
-    Her bir veri noktası, en yakın olduğu merkez ile ilişkilendirilir ve o merkezin kümesine dahil edilir. Mesafe ölçütü olarak genellikle Öklid (Euclidean) mesafesi kullanılır.
+    Her bir veri noktası, en yakın olduğu merkez ile ilişkilendirilir ve o merkezin kümesine dahil edilir. Mesafe ölçütü olarak  Öklid (Euclidean) mesafesi kullanılır.
 
 4. **Merkezlerin Güncellenmesi**:
     Her bir kümedeki veri noktalarının ortalaması alınarak, yeni kümelerin merkezleri hesaplanır. Bu işlem, kümelerin daha iyi tanımlanmasına yardımcı olur.
@@ -59,12 +59,12 @@ K-Means, denetimsiz öğrenme yöntemlerinden biri olan kümeleme algoritmaları
     Veri noktaları, yeni merkezlere göre tekrar atanır ve adımlar 3 ve 4, küme merkezleri artık değişmeyene kadar tekrarlanır.
 
 6. **Algoritmanın Sonlanması**:
-    Küme merkezleri sabit kaldığında veya belirlenen maksimum iterasyon sayısına ulaşıldığında, algoritma sonlanır.
+    Küme merkezleri sabit kaldığında algoritma sonlanır.
 
 ### Örnek:
 Bir K-Means algoritması uygulandığında, 2 boyutlu bir veri seti şu şekilde çalışır:
 - Başlangıçta 3 küme (K = 3) belirlenmiştir.
-- Algoritma, veri noktalarını 3 rastgele merkez etrafında gruplar ve her iterasyonda bu merkezleri güncelleyerek en yakın kümeyi bulur.
+- Algoritma, veri noktalarını 3 rastgele merkez etrafında gruplar ve her iterasyonda bu merkezleri güncelleyerek en yakın ve en optimum kümeyi bulur.
 
 ### Kütüphane Kullanmadan Uygulanan K-Means
 Projede K-Means algoritması sıfırdan yazılarak, kütüphane kullanılmadan uygulanmıştır. Algoritmanın her adımı manuel olarak kodlanmış ve verilerin kümelenmesi sağlanmıştır.
@@ -160,29 +160,34 @@ A video demonstrating the application's working principles has been prepared. To
 
 ## K-Means Algorithm
 
-### What is K-Means?
+### What is the K-Means Algorithm?
 
-K-Means is one of the most popular clustering algorithms, which is an unsupervised learning method. The algorithm aims to partition a dataset into a certain number of clusters, grouping each data point with its nearest cluster. The primary goal is to divide the data into clusters and identify a central point (centroid) for each cluster.
+K-Means is one of the most popular clustering algorithms in unsupervised learning. This algorithm aims to group a dataset into a predefined number of clusters by associating each data point with its nearest cluster center. The primary goal of the algorithm is to partition the data into clusters.
 
-### How K-Means Works
+### Steps of the K-Means Algorithm
 
-1. **Determining the Number of Clusters (K)**:
-    The user predetermines the K value, which defines how many clusters will be created in the dataset.
+1. **Determining the Number of Clusters (K value)**:  
+    The K value, which is pre-determined by the user, defines the maximum number of clusters to be tested in the dataset.
 
-2. **Randomly Selecting Initial Centers**:
-    The algorithm selects random K centers close to the data points as the initial starting points.
+2. **Random Selection of Initial Centroids**:  
+    The algorithm randomly selects K centroids, located near the center of the data points, as starting points.
 
-3. **Assigning Each Point to the Nearest Center**:
-    Each data point is assigned to the nearest center, forming a cluster. Euclidean distance is typically used as the distance measure.
+3. **Assigning Each Point to the Nearest Centroid**:  
+    Each data point is associated with the nearest centroid and assigned to that centroid’s cluster. The distance metric used is typically the Euclidean distance.
 
-4. **Updating Centers**:
-    The centers of the clusters are recalculated by averaging the data points within each cluster. This helps define the clusters more accurately.
+4. **Updating Centroids**:  
+    The new centroids are calculated by taking the average of all the data points in each cluster. This helps to better define the clusters.
 
-5. **Reassigning and Updating**:
-    Data points are reassigned based on the new centers, and steps 3 and 4 are repeated until the cluster centers stop changing.
+5. **Reassigning and Updating**:  
+    Data points are reassigned based on the updated centroids, and steps 3 and 4 are repeated until the cluster centroids no longer change.
 
-6. **Termination**:
-    The algorithm ends when the cluster centers remain fixed or the maximum number of iterations is reached.
+6. **Termination of the Algorithm**:  
+    The algorithm terminates when the cluster centroids remain stable.
+
+### Example:
+In a K-Means algorithm applied to a 2-dimensional dataset:
+- Initially, 3 clusters are defined (K = 3).
+- The algorithm groups the data points around 3 randomly selected centroids and iteratively updates these centroids to find the most optimal clusters.
 
 ### Example:
 When applying the K-Means algorithm to a 2D dataset:
