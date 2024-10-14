@@ -19,13 +19,20 @@ def connect_db():
 
     """
     try:
+        # connection = psycopg2.connect(
+        #     host=config.DB_HOST,
+        #     port=config.DB_PORT,
+        #     database=config.DB_NAME,
+        #     user=config.DB_USER,
+        #     password=config.DB_PASSWORD
+        # )
         connection = psycopg2.connect(
-            host=config.DB_HOST,
-            port=config.DB_PORT,
-            database=config.DB_NAME,
-            user=config.DB_USER,
-            password=config.DB_PASSWORD
-        )
+        host=os.getenv("DB_HOST", "localhost"),
+        database=os.getenv("DB_NAME", "dbKmeans"),
+        user=os.getenv("DB_USER", "postgres"),
+        password=os.getenv("DB_PASSWORD", "1234"),
+        port=os.getenv("DB_PORT", "5432")
+    )
         logging.info("Successfully connected to database.")
         return connection
 
