@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+form {
+  border: 3px solid green;
+  border-radius: 20px;
+  padding: 80px;
+}
+
+.box {
+  margin: 5px;
+  padding: 10px;
+}
