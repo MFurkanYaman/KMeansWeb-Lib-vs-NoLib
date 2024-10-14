@@ -30,10 +30,6 @@ Bu proje, Python kullanılarak geliştirilen bir web uygulamasıdır. Uygulama, 
 - **Loglama**: Uygulama içerisinde meydana gelen işlemler ve hatalar loglanarak kaydedilmiştir.
 - **Flask ile Servis Edilen Metodlar**: Uygulama, Flask framework'ü kullanarak servis edilen metodlar içerir.
 - **Unit Testler**: Her bir metod için birim testler geliştirilmiştir.
-  
-## Video Tanıtımı
-
-Projenin çalışma mantığını gösteren bir video hazırladım. Videoyu izlemek için [buraya tıklayın](#). Video, uygulamanın nasıl çalıştığını ve ana özelliklerini detaylı bir şekilde açıklamaktadır.
 
 ## K-Means Algoritması
 
@@ -153,10 +149,6 @@ This project is a web application developed using Python. The application runs t
 - **Logging**: All operations and errors occurring in the application are logged.
 - **Methods Served via Flask**: The application includes methods served via the Flask framework.
 - **Unit Tests**: Unit tests have been developed for each method.
-
-## Video Demo
-
-A video demonstrating the application's working principles has been prepared. To watch the video, click [here](#). The video provides detailed explanations of how the application works and its main features.
 
 ## K-Means Algorithm
 
